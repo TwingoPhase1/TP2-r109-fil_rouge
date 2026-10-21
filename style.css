@@ -1,0 +1,160 @@
+:root {
+    --text-dark-color: white;
+    --text-light-color: #333;
+    --text-dark-color2: #b0bec5;
+    --text-light-color2: #7c7d70;
+    --accent-dark-color: #f4ff61;
+    --accent-light-color: #d2d42a;
+    --bg-dark-color: #5c5e4e;
+    --bg-light-color: #fefff1;
+    --bg-color: var(--bg-dark-color);
+    --text-color: var(--text-dark-color);
+    --text-color2: var(--text-dark-color2);
+    --accent-color: var(--accent-dark-color);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body.light-theme {
+    --bg-color: var(--bg-light-color);
+    --text-color: var(--text-light-color);
+    --text-color2: var(--text-light-color2);
+    --accent-color: var(--accent-light-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    border-bottom: 1px var(--text-color) solid;
+    padding-bottom: 2rem;
+}
+header nav a {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+header nav button {
+    margin: 0 1rem;
+    font-size: 2rem;
+    color: var(--text-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+p {
+    font-size: 2rem;
+    color: var(--text-color2);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: left;
+
+}
+
+.accent {
+    color: var(--accent-color);
+}
+
+.filtres {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center ;
+    padding: 0 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.filtres button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.filtres button.active {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.filtres button:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+
+.galerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 0.5rem));
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: 'Yeseva One', serif;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: -0.5px;
+    margin-bottom: 4rem;
+    margin-top: 4;
+    text-align: left;
+    width: 100%;
+}
+
+
+h2 {
+    font-family: 'Yeseva One', serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0.4rem 0.8rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+}
