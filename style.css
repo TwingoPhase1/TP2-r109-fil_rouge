@@ -40,7 +40,6 @@ header {
     margin-left: 0;
     margin-right: 0;
     border-bottom: 1px var(--text-color) solid;
-    padding-bottom: 2rem;
 }
 header nav a {
     margin: 0 1rem;
@@ -156,5 +155,58 @@ h3 {
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
+    }
+    header nav a {
+        margin: 0 0.5rem;
+    }
+    header nav {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5;
+    }
+    header span{
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    header nav button {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 1rem;
+    }
+    .filtres {
+         gap: 0;    
+        margin-left: 2px;
+        margin-right: 2px;
+        padding:0 0;
+    }
+    .filtres button{
+        gap: 0;    
+        margin-left: 2px;
+        margin-right: 2px;
+        padding:0 0;
+    }
+    .galerie {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;  
+        margin: 0 auto;  
+    }
+
+    .galerie img {
+        width: 100%;
+        height: auto;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 0.6rem;
+    }
+    h2 {
+        font-size: 1rem;
     }
 }
